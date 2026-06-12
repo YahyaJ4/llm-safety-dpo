@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Model checkpoints (too large for git)
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+checkpoints/
+models/
+
+# Dataset files (too large)
+data/*.json
+data/*.csv
+data/*.txt
+*.arrow
+
+# Logs and outputs
+logs/
+*.log
+slurm-*.out
+*.err
+
+# Results (can be regenerated)
+results/
+results_evaluation/
+*.pkl
+*.npy
+
+# Temporary files
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment
+.env
+.env.local
+
+# Cache
+.cache/
+__pycache__/
+*.pyc
+
+# Wandb
+wandb/
+runs/
+
+# Figures (keep only source, not generated)
+figures/*.png
+figures/*.pdf
+figures/*.eps
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# IBEX specific
+core.*
+*.o
+*.out

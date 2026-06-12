@@ -1,0 +1,27 @@
+
+\begin{table}[t]
+\centering
+\caption{Safety-Capability Tradeoff Results. Refusal rate measured on AdvBench (50 samples) using GPT-4o judge. Capability measured on MMLU (200 samples) and GSM8K (100 samples). Best DPO results per model in \textbf{bold}.}
+\label{tab:main_results}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Model} & \textbf{Stage} & \textbf{Refusal \%} $\uparrow$ & \textbf{MMLU \%} $\uparrow$ & \textbf{GSM8K \%} $\uparrow$ \\
+\midrule
+\multirow{6}{*}{Llama 3.1-8B}
+ & SFT & 14.0 & 42.5 & 5.0 \\
+ & DPO $\beta$=0.01 & 68.0 & 48.5 & 7.0 \\
+ & DPO $\beta$=0.05 & 72.0 & 48.0 & 7.0 \\
+ & DPO $\beta$=0.1 & 72.0 & \textbf{52.0} & \textbf{7.0} \\
+ & DPO $\beta$=0.5 & 72.0 & 41.5 & 5.0 \\
+ & DPO $\beta$=1.0 & \textbf{74.0} & 47.5 & 6.0 \\
+\midrule
+\multirow{6}{*}{Qwen 2.5-7B}
+ & SFT & 70.0 & 66.5 & 25.0 \\
+ & DPO $\beta$=0.01 & \textbf{98.0} & 68.0 & 22.0 \\
+ & DPO $\beta$=0.05 & 96.0 & \textbf{68.5} & 19.0 \\
+ & DPO $\beta$=0.1 & 92.0 & 68.0 & 21.0 \\
+ & DPO $\beta$=0.5 & 92.0 & 68.0 & \textbf{27.0} \\
+ & DPO $\beta$=1.0 & 88.0 & 68.0 & 27.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
